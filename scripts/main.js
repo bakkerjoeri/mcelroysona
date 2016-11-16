@@ -2,7 +2,7 @@ $(document).ready(function () {
 	var siblingTypeChoices,
 			siblingDescriptorChoices,
 			firstNameChoices,
-			tagline;
+			taglineChoices;
 
 	siblingDescriptorChoices = [
 		"oldest",
@@ -119,7 +119,7 @@ $(document).ready(function () {
 		"Glass Shark"
 	];
 
-	tagline = [
+	taglineChoices = [
 		"Kiss your dad square on the lips.",
 		"Chase your bliss!",
 		"who loves cinnamon toast.",
