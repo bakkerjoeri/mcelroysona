@@ -137,6 +137,14 @@ $(document).ready(function () {
 		"Vape 'em if you got 'em."
 	];
 
+	function getItemFromListWithId (list, id) {
+		if (list[id]) {
+			return list[id];
+		}
+
+		return getRandomItemFromList(list);
+	}
+
 	function getRandomItemFromList (list) {
 		if (list.length > 0) {
 			return list[Math.floor(Math.random() * list.length)];
@@ -145,25 +153,75 @@ $(document).ready(function () {
 		return "";
 	}
 
-	function hideMcElroysona (callback) {
+	function getRandomIndexForList (list) {
+		return Math.floor(Math.random() * list.length);
+	}
+
+	function hideMcElroysonaCard (callback) {
 		$(".mcelroysona").slideUp(200, callback);
 	}
 
-	function showMcElroysona (callback) {
-		$(".mcelroysona").slideDown(400, callback);
+	function showMcElroysonaCard (callback) {
+		$(".mcelroysona").slideDown(300, callback);
+	}
+
+	function renderMcElroysona (descriptorId, typeId, firstNameId, taglineId) {
+		hideMcElroysonaCard(function () {
+			$(".sibling-descriptor").html(getItemFromListWithId(siblingDescriptorChoices, descriptorId));
+			$(".sibling-type").html(getItemFromListWithId(siblingTypeChoices, typeId));
+			$(".first-name").html(getItemFromListWithId(firstNameChoices, firstNameId));
+			$(".tagline").html(getItemFromListWithId(taglineChoices, taglineId));
+
+			updatePersonaIdentifierInUrlWithIds(descriptorId, typeId, firstNameId, taglineId);
+			showMcElroysonaCard();
+		});
+	}
+
+	function updatePersonaIdentifierInUrlWithIds(descriptorId, typeId, firstNameId, taglineId) {
+		var personaIdentifierQuery = "?mcelroysona=" + descriptorId + "-" + typeId + "-" + firstNameId + "-" + taglineId;
+		window.history.pushState({}, getItemFromListWithId(firstNameId), personaIdentifierQuery);
 	}
 
 	function rollMcElroysona () {
-		$(".sibling-descriptor").html(getRandomItemFromList(siblingDescriptorChoices));
-		$(".sibling-type").html(getRandomItemFromList(siblingTypeChoices));
-		$(".first-name").html(getRandomItemFromList(firstNameChoices));
-		$(".tagline").html(getRandomItemFromList(tagline));
+		renderMcElroysona(
+			getRandomIndexForList(siblingDescriptorChoices),
+			getRandomIndexForList(siblingTypeChoices),
+			getRandomIndexForList(firstNameChoices),
+			getRandomIndexForList(taglineChoices)
+		);
 	}
 
-	$(".button-generate").click(function () {
-		hideMcElroysona(function () {
-			rollMcElroysona();
-			showMcElroysona();
-		});
-	});
+	function getQueryVariables () {
+    var variables = [], 
+    		hash, 
+    		i, 
+    		hashes;
+
+    hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+    for (i = 0; i < hashes.length; i += 1) {
+        hash = hashes[i].split("=");
+        variables.push(hash[0]);
+        variables[hash[0]] = hash[1];
+    }
+
+    return variables;
+	}
+
+	function createMcElroysonaWithIdentifier(identifier) {
+		personaIdentifierList = identifier.split("-");
+		
+		renderMcElroysona(
+			getItemFromListWithId(personaIdentifierList[0]),
+			getItemFromListWithId(personaIdentifierList[1]),
+			getItemFromListWithId(personaIdentifierList[2]),
+			getItemFromListWithId(personaIdentifierList[3])
+		);
+	}
+
+	if (getQueryVariables().mcelroysona) {
+		createMcElroysonaWithIdentifier(getQueryVariables().mcelroysona);
+	}
+
+	$(".button-generate").click(rollMcElroysona);
 });
