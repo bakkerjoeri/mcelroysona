@@ -1,0 +1,48 @@
+//=================================================================//
+//  Define all base rules. Base rules are default, global styles.  //
+//=================================================================//
+
+//----------------//
+//  Base imports  //
+//----------------//
+@import
+    "compass/css3/box-sizing",
+    "init/reset",
+    "init/constants";
+
+/*---------------
+  General rules
+---------------*/
+html {
+    @include box-sizing(border-box);
+}
+
+*, *:after, *:before {
+    @include box-sizing(inherit);
+}
+
+body {
+    background-color: $color-background;
+}
+
+/*-----------------
+  Base typography
+-----------------*/
+body {
+    font-family: $font-family-default;
+    font-weight: $font-weight-normal;
+    color: $color-body-default;
+}
+
+p {
+    line-height: 1.45em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: $color-body-default;
+
+    &:hover, &:focus {
+        color: $color-theme;
+    }
+}

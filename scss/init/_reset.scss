@@ -1,0 +1,14 @@
+//=============================================================//
+//  Define all reset rules.                                    //
+//  These are rules that provide a consistent starting point.  //
+//=============================================================//
+
+/*-------
+  Reset
+-------*/
+@import "compass/reset";
+
+/* Project's reset rules */
+*:focus {
+    outline: 0;
+}

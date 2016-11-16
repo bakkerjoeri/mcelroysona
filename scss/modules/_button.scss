@@ -1,0 +1,41 @@
+@import
+	"init/constants";
+
+/* Buttons */
+.button-row {
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-row .button {
+	display: inline-block;
+}
+
+.button {
+	cursor: pointer;
+	margin-top: 0;
+	margin-bottom: $spacing-small;
+	padding: $spacing-small;
+	font-size: $font-size-normal;
+	background-color: transparent;
+	border: none;
+}
+
+.button-generate {
+	width: 100%;
+	padding: 20px 10px;
+	padding-left: 60px;
+	font-size: 24px;
+	color: white;
+	background-color: $color-theme;
+	background-image: url("../images/icon-dice.svg");
+	background-position: 10% center;
+	background-size: auto 75%;
+	background-repeat: no-repeat;
+
+	@media (min-width: 450px) {
+		max-width: 400px;
+		padding: 10px;
+		padding-left: 80px;
+	}
+}

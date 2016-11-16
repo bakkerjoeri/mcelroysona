@@ -1,0 +1,38 @@
+@import 
+	"compass/layout/sticky-footer",
+	"init/constants";
+
+/* Footer */
+$footer-height-mobile: 120px;
+$footer-height-desktop: 90px;
+
+@include sticky-footer($footer-height-mobile, ".main", ".footer-bump", ".footer");
+.footer { height: $footer-height-mobile; }
+
+@media (min-width: 450px) {
+	@include sticky-footer($footer-height-desktop, ".main", ".footer-bump", ".footer");
+	.footer { height: $footer-height-desktop; }
+}
+
+.footer {
+	padding: $spacing-gutter;
+	font-size: $font-size-small;
+
+	.credits {
+		a {
+			color: $color-body-light;
+
+			&:hover, &:focus {
+				color: $color-body-default;
+			}
+		}
+
+		color: $color-body-light;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+
+	.love {
+		text-align: center;
+	}
+}

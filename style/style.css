@@ -1,0 +1,251 @@
+/*-------
+  Reset
+-------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Project's reset rules */
+*:focus {
+  outline: 0;
+}
+
+/*---------------
+  General rules
+---------------*/
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+/*-----------------
+  Base typography
+-----------------*/
+body {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  color: #333333;
+}
+
+p {
+  line-height: 1.45em;
+  margin-bottom: 1em;
+}
+
+a {
+  color: #333333;
+}
+a:hover, a:focus {
+  color: orange;
+}
+
+/*---------
+  Modules
+---------*/
+/* McElroysona */
+.mcelroysona {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 10px 10px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 3px solid orange;
+}
+.mcelroysona .full-name {
+  font-size: 38px;
+  line-height: 2em;
+  margin-bottom: 0.6em;
+  font-family: serif;
+  font-style: italic;
+}
+@media (min-width: 450px) {
+  .mcelroysona {
+    border: 3px solid orange;
+    border-bottom: none;
+    max-width: 380px;
+  }
+}
+
+/* Buttons */
+.button-row {
+  overflow: hidden;
+  text-align: center;
+}
+
+.button-row .button {
+  display: inline-block;
+}
+
+.button {
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+}
+
+.button-generate {
+  width: 100%;
+  padding: 20px 10px;
+  padding-left: 60px;
+  font-size: 24px;
+  color: white;
+  background-color: orange;
+  background-image: url("../images/icon-dice.svg");
+  background-position: 10% center;
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 450px) {
+  .button-generate {
+    max-width: 400px;
+    padding: 10px;
+    padding-left: 80px;
+  }
+}
+
+/* Footer */
+html, body {
+  height: 100%;
+}
+
+.main {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -120px;
+}
+.main .footer-bump {
+  height: 120px;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  height: 120px;
+}
+
+.footer {
+  height: 120px;
+}
+
+@media (min-width: 450px) {
+  html, body {
+    height: 100%;
+  }
+
+  .main {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -90px;
+  }
+  .main .footer-bump {
+    height: 90px;
+  }
+
+  .footer {
+    clear: both;
+    position: relative;
+    height: 90px;
+  }
+
+  .footer {
+    height: 90px;
+  }
+}
+.footer {
+  padding: 10px;
+  font-size: 12px;
+}
+.footer .credits {
+  color: #C1C1C1;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.footer .credits a {
+  color: #C1C1C1;
+}
+.footer .credits a:hover, .footer .credits a:focus {
+  color: #333333;
+}
+.footer .love {
+  text-align: center;
+}
+
+.page-wrap {
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
