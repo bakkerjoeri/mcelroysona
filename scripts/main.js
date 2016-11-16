@@ -116,7 +116,9 @@ $(document).ready(function () {
 		"Mady",
 		"Cameron",
 		"Jenaya",
-		"Glass Shark"
+		"Glass Shark",
+		"Peepums",
+		"Ray Donovan"
 	];
 
 	taglineChoices = [
@@ -134,7 +136,10 @@ $(document).ready(function () {
 		"and y'all horny for this one.",
 		"ABRACAFUCKYOU!",
 		"D'you guys want a Yahoo?",
-		"Vape 'em if you got 'em."
+		"Vape 'em if you got 'em.",
+		"and I have all your nasty gum.",
+		"Point me to the toilet.",
+		"👋👋"
 	];
 
 	function getItemFromListWithId (list, id) {
