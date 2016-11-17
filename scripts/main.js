@@ -45,7 +45,31 @@ $(document).ready(function () {
 		"new best",
 		"extremely hairy",
 		"tiny",
-		"small"
+		"small",
+		"giant",
+		"regular sized",
+		"realest",
+		"regular",
+		"new",
+		"very goofy",
+		"very normal",
+		"tastiest",
+		"very very tasty",
+		"supreme",
+		"cool",
+		"#1",
+		"familiar",
+		"modren",
+		"level 9000",
+		"bearded",
+		"fastest",
+		"shitty",
+		"smelly",
+		"smelliest",
+		"babiest",
+		"hungriest",
+		"not too familiar", 
+		"not too not familiar"
 	];
 
 
@@ -68,9 +92,22 @@ $(document).ready(function () {
 		"grand mama",
 		"grand papa",
 		"friend",
-		"Yahoo Answers user",
+		"Yahoo! Answers user",
 		"horse",
-		"ghost"
+		"ghost",
+		"friend",
+		"best friend's dad",
+		"yadrew druid",
+		"cousin",
+		"dungeon master",
+		"niece",
+		"baby",
+		"Chilean miner",
+		"state bird",
+		"developer",
+		"nerd",
+		"geek",
+		"adult"
 	];
 
 	firstNameChoices = [
@@ -94,7 +131,7 @@ $(document).ready(function () {
 		"Theresa",
 		"Carly Rae",
 		"Scott",
-		"Bakula",
+		"Scott Bakula",
 		"Niki",
 		"Olivia",
 		"Debby",
@@ -118,7 +155,26 @@ $(document).ready(function () {
 		"Jenaya",
 		"Glass Shark",
 		"Peepums",
-		"Ray Donovan"
+		"Ray Donovan",
+		"Vicki",
+		"Final Pam",
+		"Ja'am",
+		"Bart",
+		"Garfield",
+		"Zoe",
+		"Drew",
+		"Rebeccah",
+		"Sonic the",
+		"Yiffin",
+		"Screech",
+		"Danzig",
+		"J.R.R.",
+		"Big",
+		"Taako",
+		"Merle",
+		"Magnus",
+		"Barry",
+		"Klarg"
 	];
 
 	taglineChoices = [
@@ -130,7 +186,7 @@ $(document).ready(function () {
 		"and can you be cool for, like, A SECOND?!",
 		"and I am holding your hand.",
 		"I never have time to be around on podcasts because I'm trapped in this damn boombox.",
-		"juggler",
+		"Juggler",
 		"It's pronounced Darlene.",
 		"Totinos brand ambassador",
 		"and y'all horny for this one.",
@@ -139,7 +195,24 @@ $(document).ready(function () {
 		"Vape 'em if you got 'em.",
 		"and I have all your nasty gum.",
 		"Point me to the toilet.",
-		"👋👋"
+		"👋👋",
+		"from toe to tip!",
+		"feeeeed meeeee",
+		"GREATJOB!",
+		"and you won't get those good good Gushie Tapes from me.",
+		"Prince of McElroys",
+		"Now it's time for Things I Bought At Sheetz 🎶",
+		"Evil McElroy twin",
+		"on... the Adventure Zone!",
+		"Cake boss.",
+		"Donde esta los thunder lizards?",
+		"Set me free, blast my cache!",
+		"I'm buying a shirt with wolves on it.",
+		"Unless...",
+		"and there's people living inside me.",
+		"Penis cake expert",
+		"I think dogs should vote!",
+		"Buckets!"
 	];
 
 	function getItemFromListWithId (list, id) {
@@ -170,14 +243,21 @@ $(document).ready(function () {
 		$(".mcelroysona").slideDown(300, callback);
 	}
 
-	function renderMcElroysona (descriptorId, typeId, firstNameId, taglineId) {
+	function renderMcElroysona (descriptorId, typeId, firstNameId, taglineId, pushNewState) {
+		if (pushNewState === undefined) {
+			pushNewState = true;
+		}
+
 		hideMcElroysonaCard(function () {
 			$(".sibling-descriptor").html(getItemFromListWithId(siblingDescriptorChoices, descriptorId));
 			$(".sibling-type").html(getItemFromListWithId(siblingTypeChoices, typeId));
 			$(".first-name").html(getItemFromListWithId(firstNameChoices, firstNameId));
 			$(".tagline").html(getItemFromListWithId(taglineChoices, taglineId));
 
-			updatePersonaIdentifierInUrlWithIds(descriptorId, typeId, firstNameId, taglineId);
+			if (pushNewState) {
+				updatePersonaIdentifierInUrlWithIds(descriptorId, typeId, firstNameId, taglineId, pushNewState);
+			}
+	
 			showMcElroysonaCard();
 		});
 	}
@@ -213,20 +293,29 @@ $(document).ready(function () {
     return variables;
 	}
 
-	function createMcElroysonaWithIdentifier(identifier) {
+	function createMcElroysonaWithIdentifier(identifier, pushNewState) {
 		personaIdentifierList = identifier.split("-");
 		
 		renderMcElroysona(
-			getItemFromListWithId(personaIdentifierList[0]),
-			getItemFromListWithId(personaIdentifierList[1]),
-			getItemFromListWithId(personaIdentifierList[2]),
-			getItemFromListWithId(personaIdentifierList[3])
+			personaIdentifierList[0],
+			personaIdentifierList[1],
+			personaIdentifierList[2],
+			personaIdentifierList[3],
+			pushNewState
 		);
 	}
 
-	if (getQueryVariables().mcelroysona) {
-		createMcElroysonaWithIdentifier(getQueryVariables().mcelroysona);
+	function createMcElroysonaIfPersonaIdentifierIsFound () {
+		if (getQueryVariables().mcelroysona) {
+			createMcElroysonaWithIdentifier(getQueryVariables().mcelroysona, false);
+		}
 	}
 
+	createMcElroysonaIfPersonaIdentifierIsFound();
+
 	$(".button-generate").click(rollMcElroysona);
+
+	window.onpopstate = function () {
+		createMcElroysonaIfPersonaIdentifierIsFound();
+	}
 });
