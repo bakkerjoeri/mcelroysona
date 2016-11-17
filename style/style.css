@@ -116,7 +116,7 @@ a:hover, a:focus {
 }
 .mcelroysona .full-name {
   font-size: 38px;
-  line-height: 2em;
+  line-height: 1.45;
   margin-bottom: 0.6em;
   font-family: serif;
   font-style: italic;
@@ -152,8 +152,8 @@ a:hover, a:focus {
 .button-generate {
   width: 100%;
   padding: 20px 10px;
-  padding-left: 60px;
-  font-size: 24px;
+  padding-left: 80px;
+  font-size: 22px;
   color: white;
   background-color: orange;
   background-image: url("../images/icon-dice.svg");
@@ -165,7 +165,8 @@ a:hover, a:focus {
   .button-generate {
     max-width: 400px;
     padding: 10px;
-    padding-left: 80px;
+    padding-left: 100px;
+    font-size: 22px;
   }
 }
 
@@ -179,20 +180,20 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin-bottom: -120px;
+  margin-bottom: -150px;
 }
 .main .footer-bump {
-  height: 120px;
+  height: 150px;
 }
 
 .footer {
   clear: both;
   position: relative;
-  height: 120px;
+  height: 150px;
 }
 
 .footer {
-  height: 120px;
+  height: 150px;
 }
 
 @media (min-width: 450px) {
@@ -205,20 +206,20 @@ html, body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin-bottom: -90px;
+    margin-bottom: -120px;
   }
   .main .footer-bump {
-    height: 90px;
+    height: 120px;
   }
 
   .footer {
     clear: both;
     position: relative;
-    height: 90px;
+    height: 120px;
   }
 
   .footer {
-    height: 90px;
+    height: 120px;
   }
 }
 .footer {

@@ -3,8 +3,8 @@
 	"init/constants";
 
 /* Footer */
-$footer-height-mobile: 120px;
-$footer-height-desktop: 90px;
+$footer-height-mobile: 150px;
+$footer-height-desktop: 120px;
 
 @include sticky-footer($footer-height-mobile, ".main", ".footer-bump", ".footer");
 .footer { height: $footer-height-mobile; }
