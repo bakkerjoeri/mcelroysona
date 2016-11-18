@@ -113,7 +113,8 @@ $(document).ready(function () {
 		"precious",
 		"trash",
 		"dangerous",
-		"future"
+		"future",
+		"other"
 	];
 
 
@@ -412,7 +413,9 @@ $(document).ready(function () {
 		"Chomping your flavor",
 		"and I hate you, Ron.",
 		"Sorry, something's gone wrong.",
-		"N'aw, beans."
+		"N'aw, beans.",
+		"It's a Candlenights miracle! 🕯🌙",
+		"But I'm secretly three kids stacked up in a raincoat."
 	];
 
 	function getItemFromListWithId (list, id) {
