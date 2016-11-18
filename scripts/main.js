@@ -112,7 +112,8 @@ $(document).ready(function () {
 		"knee high to a frog",
 		"precious",
 		"trash",
-		"dangerous"
+		"dangerous",
+		"future"
 	];
 
 
@@ -334,7 +335,8 @@ $(document).ready(function () {
 		"John",
 		"Charlie",
 		"BeBe",
-		"Ron Don"
+		"Ron Don",
+		"Arnold"
 	];
 
 	taglineChoices = [
@@ -396,8 +398,8 @@ $(document).ready(function () {
 		"I am inside your pocket; you have enough money to buy my DVD.",
 		"Get these feeners clean.",
 		"Whoopsadoodle!",
-		"I am here today bringing the good news about Robot Jesus.",
-		"Noodle up you unfunny fucks",
+		"Did you hear the good news about Robot Jesus?",
+		"Noodle up you unfunny fucks.",
 		"The Man with the Flan Plan",
 		"I in dat bad dahk wadah",
 		"I'm speaking to you through the equestriverse.",
