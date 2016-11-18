@@ -111,7 +111,8 @@ $(document).ready(function () {
 		"fun",
 		"knee high to a frog",
 		"precious",
-		"trash"
+		"trash",
+		"dangerous"
 	];
 
 
@@ -211,7 +212,9 @@ $(document).ready(function () {
 		"mayor",
 		"Applebee's server",
 		"pisskid",
-		"ratbag"
+		"ratbag",
+		"monster",
+		"monstrosity"
 	];
 
 	firstNameChoices = [
