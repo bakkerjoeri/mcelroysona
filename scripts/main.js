@@ -114,7 +114,10 @@ $(document).ready(function () {
 		"trash",
 		"dangerous",
 		"future",
-		"other"
+		"other",
+		"nasty",
+		"gaslit",
+		"loose and easy"
 	];
 
 
@@ -216,7 +219,15 @@ $(document).ready(function () {
 		"pisskid",
 		"ratbag",
 		"monster",
-		"monstrosity"
+		"monstrosity",
+		"dolphin jockey",
+		"cop",
+		"skeleton",
+		"sock detective",
+		"warrior cat",
+		"cat",
+		"chinchilla",
+		"sexpert"
 	];
 
 	firstNameChoices = [
@@ -325,7 +336,7 @@ $(document).ready(function () {
 		"Nick",
 		"Stephen",
 		"Amelie",
-		"Snowden",
+		"Shnowden",
 		"Mackenzie",
 		"Tristan the Marine",
 		"Gushie",
@@ -339,7 +350,9 @@ $(document).ready(function () {
 		"Ron Don",
 		"Arnold",
 		"Riley",
-		"Calia-001"
+		"Calia-001",
+		"Bobby",
+		"Troutleap"
 	];
 
 	taglineChoices = [
@@ -417,7 +430,12 @@ $(document).ready(function () {
 		"Sorry, something's gone wrong.",
 		"N'aw, beans.",
 		"It's a Candlenights miracle! 🕯🌙",
-		"But I'm secretly three kids stacked up in a raincoat."
+		"but I'm secretly three kids stacked up in a raincoat.",
+		"and I'm even a republican!",
+		"FUCKED UP on pasta.",
+		"emerging from my hole.",
+		"What's up, Moon? I failed.",
+		"Ready to go chin deep?"
 	];
 
 	function getItemFromListWithId (list, id) {
