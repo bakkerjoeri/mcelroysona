@@ -117,7 +117,9 @@ $(document).ready(function () {
 		"other",
 		"nasty",
 		"gaslit",
-		"loose and easy"
+		"loose and easy",
+		"dictator",
+		"incompetent"
 	];
 
 
@@ -227,7 +229,11 @@ $(document).ready(function () {
 		"warrior cat",
 		"cat",
 		"chinchilla",
-		"sexpert"
+		"sexpert",
+		"athlete",
+		"craft beer enthusiast",
+		"guestspert",
+		"camp councelor"
 	];
 
 	firstNameChoices = [
@@ -352,13 +358,18 @@ $(document).ready(function () {
 		"Riley",
 		"Caila-001",
 		"Bobby",
-		"Troutleap"
+		"Troutleap",
+		"Sports",
+		"Kevin",
+		"Jake",
+		"Amir",
+		"McCheese"
 	];
 
 	taglineChoices = [
 		"Kiss your dad square on the lips.",
 		"Chase your bliss!",
-		"who loves cinnamon toast.",
+		"Welcome to the 'lympo's, boys.",
 		"Bliss delight!",
 		"COTTON!",
 		"and can you be cool for, like, A SECOND?!",
@@ -435,7 +446,9 @@ $(document).ready(function () {
 		"FUCKED UP on pasta.",
 		"emerging from my hole.",
 		"What's up, Moon? I failed.",
-		"Ready to go chin deep?"
+		"Ready to go chin deep?",
+		"Let's roll initiative.",
+		"harbinger of chaos."
 	];
 
 	function getItemFromListWithId (list, id) {
