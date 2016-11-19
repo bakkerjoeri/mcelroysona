@@ -337,7 +337,9 @@ $(document).ready(function () {
 		"Charlie",
 		"BeBe",
 		"Ron Don",
-		"Arnold"
+		"Arnold",
+		"Riley",
+		"Calia-001"
 	];
 
 	taglineChoices = [
