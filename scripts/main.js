@@ -236,7 +236,8 @@ $(document).ready(function () {
 		"guestspert",
 		"camp councelor",
 		"farmer",
-		"clone"
+		"clone",
+		"chillest"
 	];
 
 	firstNameChoices = [
@@ -367,7 +368,8 @@ $(document).ready(function () {
 		"Jake",
 		"Amir",
 		"McCheese",
-		"Justin 8"
+		"Justin 8",
+		"Jack Black"
 	];
 
 	taglineChoices = [
@@ -452,7 +454,12 @@ $(document).ready(function () {
 		"What's up, Moon? I failed.",
 		"Ready to go chin deep?",
 		"Let's roll initiative.",
-		"harbinger of chaos."
+		"harbinger of chaos.",
+		"I like to sleep in my blue jeans.",
+		"and I'm robbing this bank!",
+		"Sean Paul impersonator",
+		"Get Big. Get Dumb. Get Ladies.",
+		"Take a chance on me!"
 	];
 
 	function getItemFromListWithId (list, id) {
