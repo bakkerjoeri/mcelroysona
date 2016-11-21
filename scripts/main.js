@@ -233,7 +233,8 @@ $(document).ready(function () {
 		"athlete",
 		"craft beer enthusiast",
 		"guestspert",
-		"camp councelor"
+		"camp councelor",
+		"farmer"
 	];
 
 	firstNameChoices = [
