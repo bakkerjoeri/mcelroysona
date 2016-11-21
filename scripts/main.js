@@ -119,7 +119,8 @@ $(document).ready(function () {
 		"gaslit",
 		"loose and easy",
 		"dictator",
-		"incompetent"
+		"incompetent",
+		"wise"
 	];
 
 
