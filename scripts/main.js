@@ -235,7 +235,8 @@ $(document).ready(function () {
 		"craft beer enthusiast",
 		"guestspert",
 		"camp councelor",
-		"farmer"
+		"farmer",
+		"clone"
 	];
 
 	firstNameChoices = [
@@ -365,7 +366,8 @@ $(document).ready(function () {
 		"Kevin",
 		"Jake",
 		"Amir",
-		"McCheese"
+		"McCheese",
+		"Justin 8"
 	];
 
 	taglineChoices = [
