@@ -118,9 +118,11 @@ $(document).ready(function () {
 		"nasty",
 		"gaslit",
 		"loose and easy",
-		"dictator",
+		"hilarious",
 		"incompetent",
-		"wise"
+		"wise",
+		"young",
+		"chillest"
 	];
 
 
@@ -237,7 +239,7 @@ $(document).ready(function () {
 		"camp councelor",
 		"farmer",
 		"clone",
-		"chillest"
+		"dictator"
 	];
 
 	firstNameChoices = [

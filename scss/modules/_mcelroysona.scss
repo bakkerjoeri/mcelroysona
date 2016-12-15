@@ -4,7 +4,6 @@
 /* McElroysona */
 .mcelroysona {
 	width: 100%;
-	max-width: 400px;
 	padding: 30px 10px 10px;
 	margin: 0 auto;
 	text-align: center;
@@ -19,6 +18,7 @@
 	}
 
 	@media (min-width: 450px) {
+		max-width: 400px;
 		border: 3px solid $color-theme;
 		border-bottom: none;
 	}
