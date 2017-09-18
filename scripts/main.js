@@ -246,7 +246,8 @@ $(document).ready(function () {
 		"clone",
 		"dictator",
 		"toddler",
-		"beheader"
+		"beheader",
+		"mommy"
 	];
 
 	firstNameChoices = [
@@ -484,7 +485,10 @@ $(document).ready(function () {
 		"Get dunked on!",
 		"No bummers!",
 		"Nice",
-		"Please, Daniel, we can't keep doing this."
+		"Please, Daniel, we can't keep doing this.",
+		"I WANNA MUNCH!",
+		"SQUAD!",
+		"Pobody's nerfect."
 	];
 
 	function getItemFromListWithId (list, id) {
