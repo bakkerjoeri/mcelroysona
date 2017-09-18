@@ -388,7 +388,8 @@ $(document).ready(function () {
 		"Johann",
 		"Pringles",
 		"Magic Brian",
-		"Jess"
+		"Jess",
+		"Daniel"
 	];
 
 	taglineChoices = [
@@ -479,10 +480,11 @@ $(document).ready(function () {
 		"Sean Paul impersonator",
 		"Get Big. Get Dumb. Get Ladies.",
 		"Take a chance on me!",
-		"Shrimp! Heaven! NOW!<br />🦐 🦐 🦐",
+		"SHRIMP! HEAVEN! NOW!<br />🦐 🦐 🦐",
 		"Get dunked on!",
 		"No bummers!",
-		"Nice"
+		"Nice",
+		"Please, Daniel, we can't keep doing this."
 	];
 
 	function getItemFromListWithId (list, id) {
