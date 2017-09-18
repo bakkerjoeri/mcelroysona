@@ -122,7 +122,12 @@ $(document).ready(function () {
 		"incompetent",
 		"wise",
 		"young",
-		"chillest"
+		"chillest",
+		"smart",
+		"smartest",
+		"dumb",
+		"dumbest",
+		"horny"
 	];
 
 
@@ -239,7 +244,9 @@ $(document).ready(function () {
 		"camp councelor",
 		"farmer",
 		"clone",
-		"dictator"
+		"dictator",
+		"toddler",
+		"beheader"
 	];
 
 	firstNameChoices = [
@@ -347,7 +354,7 @@ $(document).ready(function () {
 		"Magic Brian",
 		"Nick",
 		"Stephen",
-		"Amelie",
+		"Amélie",
 		"Shnowden",
 		"Mackenzie",
 		"Tristan the Marine",
@@ -371,7 +378,17 @@ $(document).ready(function () {
 		"Amir",
 		"McCheese",
 		"Justin 8",
-		"Jack Black"
+		"Jack Black",
+		"Todd",
+		"Sorry, something's gone wrong",
+		"Lucretia",
+		"Davenport",
+		"Lup",
+		"Kravitz",
+		"Johann",
+		"Pringles",
+		"Magic Brian",
+		"Jess"
 	];
 
 	taglineChoices = [
@@ -446,7 +463,7 @@ $(document).ready(function () {
 		"your friendly Applebee's server.",
 		"Chomping your flavor",
 		"and I hate you, Ron.",
-		"Sorry, something's gone wrong.",
+		"Play with me in this space.",
 		"N'aw, beans.",
 		"It's a Candlenights miracle! 🕯🌙",
 		"but I'm secretly three kids stacked up in a raincoat.",
@@ -461,7 +478,11 @@ $(document).ready(function () {
 		"and I'm robbing this bank!",
 		"Sean Paul impersonator",
 		"Get Big. Get Dumb. Get Ladies.",
-		"Take a chance on me!"
+		"Take a chance on me!",
+		"Shrimp! Heaven! NOW!<br />🦐 🦐 🦐",
+		"Get dunked on!",
+		"No bummers!",
+		"Nice"
 	];
 
 	function getItemFromListWithId (list, id) {
